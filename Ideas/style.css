@@ -1,0 +1,245 @@
+body {
+  background: #272727;;
+}
+
+a {
+  color: #272727;
+}
+
+.project {
+  border-radius: 5px;
+  margin: 2% 15%;
+  position: relative;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px 0;
+}
+
+.navbar .left {
+  position: relative;
+  left: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar .left ul {
+  padding: 0;
+}
+
+.navbar .left ul li {
+  display: inline;
+  margin: 0 5px;
+  list-style: none;
+}
+
+.navbar .left ul li a {
+  color: #272727;
+  padding: 5px;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.not-active {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.navbar .left ul li a:hover {
+  background-color: #3a3c5349;
+}
+
+.project > .menu {
+  display: flex;
+}
+
+.menu .project .select {
+  margin: 20px auto;
+  height: 745px;
+}
+
+.menu .project h1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #70717B;
+  text-align: center;
+}
+
+.menu .project .select ul{
+  line-height: 2;
+  padding: 15px;
+}
+
+.menu .project .select li {
+  color: #272727d4;
+  transition: 0.5s;
+  list-style: none;
+}
+
+.menu .project .select li:hover{
+  color: #272727;
+  font-size: 20px;
+}
+
+.selected::marker {
+  content: "> ";
+  padding-left: 5%;
+}
+
+.menu .project {
+  width: 230px;
+  padding: 0 20px;
+  margin: 20px 30px;
+  border-top: 2px solid #272727;
+  border-bottom: 2px solid #272727;
+  background: #2727271c;
+}
+
+.menu .project h2 {
+  color: #fffffe;
+  font-size: 1.5rem;
+  font-family: Arial,sans-serif;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.menu .project p {
+  color: #fffffe;
+  font-family: Arial,sans-serif;
+  font-weight: lighter;
+}
+
+.menu .project button {
+  margin-right: auto;
+  display: block;
+  margin-left: auto;
+  background: #fffffe;
+  border-radius: 10px;
+  width: 90%;
+  height: 40px;
+  border: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #272727;
+}
+
+.menu .board {
+  margin: 20px;
+}
+
+.menu .board h1 {
+  font-size: 1.2rem;
+  color: #272727;
+}
+
+.menu .board .production {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 950px;
+  font-family: Arial,sans-serif;
+}
+
+.menu .board .cards .production .card {
+    height: 150px;
+    width: 150px;
+    border-radius: 25px;
+    margin: 20px 15px 50px 15px;
+    transition: 0.3s;
+}
+
+.menu .board .cards .production .card:hover{
+  transform: scale(1.1);
+}
+
+.menu .board .cards .production .card .initial {
+    text-align: center;
+    height: 150px;
+    line-height: 150px;
+    font-size: 2.5rem;
+    color: #fffffe;
+    font-weight: bold;
+}
+
+.menu .board .cards .production .card .grey {
+    text-align: center;
+    height: 150px;
+    line-height: 150px;
+    font-size: 4rem;
+    color: #70717B;
+    font-weight: 100;
+}
+
+.menu .board .cards .production .card .desc {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.menu .board .cards .production .red {
+  background: #ff5858;
+  box-shadow: 0px 5px 15px #ff5858;
+}
+
+.menu .board .cards .production .blue {
+  background: #58AEFF;
+  box-shadow: 0px 5px 15px #58AEFF;
+}
+
+.menu .board .cards .production .orange {
+  background: #FF8158;
+  box-shadow: 0px 5px 15px #FF8158;
+}
+
+.menu .board .cards .production .green {
+  background: #58ff5e;
+  box-shadow: 0px 5px 15px #58ff5e;
+}
+
+
+.menu .board .cards .production .yellow {
+  background: #ffde58;
+  box-shadow: 0px 5px 15px #ffde58;
+}
+
+.menu .board .cards .production .purple {
+  background: #a658ff;
+  box-shadow: 0px 5px 15px #a658ff;
+}
+
+.menu .board .cards .production .pink {
+  background: #ff58c7;
+  box-shadow: 0px 5px 15px #ff58c7;
+}
+
+.project footer {
+  color: gray;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 0 30px 20px 0;
+}
+
+.project footer a {
+  text-decoration: none;
+  color: gray;
+  margin: 0 20px;
+  font-size: 0.8rem;
+  position: relative;
+  top: -2px;
+}
+
+.project footer i {
+  font-size: 1.2rem;
+}
