@@ -9,7 +9,6 @@ function selectProject() {
 
   const ulist = document.createElement("ul");
   const litem = document.createElement("li");
-  const listproj = document.createElement("li");
   const projectlist = [
     "3D Shapes",
     "Design",
@@ -30,7 +29,6 @@ function selectProject() {
 
   ulist.append(litem);
   select.append(ulist);
-  para.insertBefore(ulist, null);
   select.append(para);
   project.append(select);
   menu.append(project);
