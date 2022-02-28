@@ -4,8 +4,8 @@ function selectProject() {
   const project = document.createElement("div");
   const select = document.createElement("div");
 
-  const para = document.createElement("h1");
-  para.innerHTML = "projects";
+  const heading = document.createElement("h1");
+  heading.innerHTML = "projects";
 
   const ulist = document.createElement("ul");
   const litem = document.createElement("li");
@@ -29,7 +29,7 @@ function selectProject() {
 
   ulist.append(litem);
   select.append(ulist);
-  select.append(para);
+  select.append(heading);
   project.append(select);
   menu.append(project);
   body.append(menu);
