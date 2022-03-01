@@ -5,7 +5,7 @@ function selectProject() {
   const select = document.createElement("div");
 
   const heading = document.createElement("h1");
-  heading.innerHTML = "projects";
+  heading.textContent = "projects";
 
   const ulist = document.createElement("ul");
   const litem = document.createElement("li");
@@ -17,7 +17,7 @@ function selectProject() {
     "Random stuff",
     "Terminal/Command",
     "Trigonometry",
-    "Unity",
+    "Unity"
   ];
 
   for (let projects of projectlist) {
@@ -25,11 +25,11 @@ function selectProject() {
     newprolist.textContent = projects;
 
     litem.appendChild(newprolist);
-  }
+  };
 
   ulist.append(litem);
-  select.append(ulist);
   select.append(heading);
+  select.append(ulist);
   project.append(select);
   menu.append(project);
   body.append(menu);
