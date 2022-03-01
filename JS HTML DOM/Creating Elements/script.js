@@ -31,7 +31,7 @@ function selectProject() {
   };
 
   const menu = document.createElement("div");
-  left.append(menu);
+  projectbody.append(menu);
 
   const project = document.createElement("div");
   menu.append(project);
@@ -45,9 +45,6 @@ function selectProject() {
 
   const ulist = document.createElement("ul");
   select.append(ulist);
-
-  const litem = document.createElement("li");
-  ulist.append(litem);
 
   const projectlist = [
     "3D Shapes",
@@ -64,7 +61,7 @@ function selectProject() {
     let newprolist = document.createElement("li");
     newprolist.textContent = projects;
 
-    litem.appendChild(newprolist);
+    ulist.appendChild(newprolist);
   };
 
   document.getElementsByTagName("div")[0].className = "project";
@@ -74,4 +71,6 @@ function selectProject() {
   document.getElementsByTagName("div")[3].className = "menu";
   document.getElementsByTagName("div")[4].className = "project";
   document.getElementsByTagName("div")[5].className = "select";
+
+  document.getElementsByTagName("li")[7].className = "selected";
 }
