@@ -16,22 +16,37 @@ function selectProject() {
   const ultopnav = document.createElement("ul");
   left.append(ultopnav);
 
-  const licurrentpage = document.createElement("li");
-  ultopnav.append(licurrentpage);
+  const titlehome = document.createElement("li");
+  ultopnav.append(titlehome);
 
-  const selectpage = [
-    "Home",
-    "Projects",
-    "About",
-    "Contact"
-  ];
+  const anchorhome = document.createElement("a");
+  anchorhome.textContent = "Home";
+  titlehome.append(anchorhome);
+  document.getElementsByTagName("a")[0].setAttribute("href", "https://techlm77.github.io/Website/JS HTML DOM/Creating Elements/index.html");
 
-  for (let currentpage of selectpage) {
-    let selectedpage = document.createElement("li");
-    selectedpage.textContent = currentpage;
+  const titleprojects = document.createElement("li");
+  ultopnav.append(titleprojects);
 
-    licurrentpage.appendChild(selectedpage);
-  };
+  const anchorprojects = document.createElement("a");
+  anchorprojects.textContent = "Projects";
+  titleprojects.append(anchorprojects);
+  document.getElementsByTagName("a")[1].setAttribute("href", "https://techlm77.github.io/Website/JS HTML DOM/Creating Elements/index.html");
+
+  const titleabout = document.createElement("li");
+  ultopnav.append(titleabout);
+
+  const anchorabout = document.createElement("a");
+  anchorabout.textContent = "About";
+  titleabout.append(anchorabout);
+  document.getElementsByTagName("a")[2].setAttribute("href", "https://techlm77.github.io/Website/JS HTML DOM/Creating Elements/index.html");
+
+  const titlecontact = document.createElement("li");
+  ultopnav.append(titlecontact);
+
+  const anchorcontact = document.createElement("a");
+  anchorcontact.textContent = "Contact";
+  titlecontact.append(anchorcontact);
+  document.getElementsByTagName("a")[3].setAttribute("href", "https://techlm77.github.io/Website/JS HTML DOM/Creating Elements/index.html");
 
   const menu = document.createElement("div");
   projectbody.append(menu);
@@ -60,7 +75,7 @@ function selectProject() {
     "Random stuff",
     "Terminal/Command",
     "Trigonometry",
-    "Unity"
+    "Unity",
   ];
 
   for (let projects of projectlist) {
@@ -68,7 +83,7 @@ function selectProject() {
     newprolist.textContent = projects;
 
     ulist.appendChild(newprolist);
-  };
+  }
   document.getElementsByTagName("li")[7].className = "selected";
 
   const board = document.createElement("div");
@@ -173,7 +188,7 @@ function selectProject() {
 
   const cardpink1 = document.createElement("div");
   production.append(cardpink1);
-  document.getElementsByTagName("div")[27].className = "card pink";  
+  document.getElementsByTagName("div")[27].className = "card pink";
 
   const pic1initial = document.createElement("div");
   pic1initial.textContent = "R";
@@ -198,7 +213,6 @@ function selectProject() {
   rc2desc.textContent = "Display a video";
   cardred2.append(rc2desc);
   document.getElementsByTagName("div")[32].className = "desc";
-
 
   const cardorange2 = document.createElement("div");
   production.append(cardorange2);
@@ -255,5 +269,4 @@ function selectProject() {
   bc2desc.textContent = "Upload an image/video (Bug)";
   cardblue2.append(bc2desc);
   document.getElementsByTagName("div")[44].className = "desc";
-
 }
